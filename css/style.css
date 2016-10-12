@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import "https://fonts.googleapis.com/css?family=Open+Sans|Raleway";
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@keyframes agranda {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.25); } }
+.container {
+  max-width: 1000px; }
+
+.navbar-default {
+  background: transparent;
+  background-image: none;
+  border-radius: 0;
+  box-shadow: inset 0 0 0;
+  padding: 30px; }
+  .navbar-default ul.navbar-nav li a {
+    font-family: "Open Sans", sans-serif;
+    color: #c5c9ca; }
+    .navbar-default ul.navbar-nav li a:hover {
+      color: black; }
+
+.navbar {
+  border: 0; }
+
+header {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("../images/indexbanner-bg3.jpg");
+  background-size: cover;
+  background-position-x: center;
+  height: 688px;
+  color: white; }
+  @media screen and (max-width: 768px) {
+    header {
+      height: 0; } }
+  header .centro {
+    padding-top: 200px; }
+    header .centro h1 {
+      font-size: 48px;
+      line-height: 100px; }
+    header .centro p {
+      line-height: 30px; }
+
+.navbar-form {
+  padding: 0;
+  margin-top: -40px;
+  width: 100%; }
+  .navbar-form .form-group {
+    width: 100%; }
+    .navbar-form .form-group .form-control {
+      height: 80px;
+      border-radius: 0;
+      font-family: "Open Sans", sans-serif;
+      width: 110%; }
+  .navbar-form .btn.btn-info {
+    height: 80px;
+    border-radius: 0;
+    font-family: "Open Sans", sans-serif;
+    padding: 6px 20px; }
+
+.descripcion {
+  padding: 60px 0;
+  font-family: "Open Sans", sans-serif; }
+  .descripcion article {
+    padding-top: 20px; }
+    .descripcion article h4 {
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 20px 0; }
+    .descripcion article p {
+      line-height: 25px; }
+    .descripcion article .dots {
+      position: absolute;
+      right: -15px;
+      top: 65px; }
+      @media screen and (max-width: 992px) {
+        .descripcion article .dots {
+          display: none; } }
+    .descripcion article .iconos:hover {
+      animation-name: agranda;
+      animation-duration: 2s;
+      animation-fill-mode: forwards; }
+
+.servicios {
+  font-family: "Open Sans", sans-serif; }
+  .servicios .titulo {
+    padding: 40px 0; }
+  .servicios h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold; }
+  .servicios .col-sm-4 .phone {
+    display: inline-block; }
+  .servicios .col-sm-4 .texto {
+    padding: 40px 20px; }
+    @media screen and (max-width: 992px) {
+      .servicios .col-sm-4 .texto {
+        padding: 20px; } }
+    .servicios .col-sm-4 .texto h4 {
+      padding-top: 15px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .servicios .col-sm-4 .texto p {
+      padding-top: 15px;
+      color: #96979b;
+      line-height: 20px;
+      font-size: 14px; }
+  @media screen and (max-width: 768px) {
+    .servicios .col-sm-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+  .servicios .superponer {
+    z-index: 2; }
+  .servicios .relativo {
+    position: relative; }
+    .servicios .relativo .derecha {
+      right: 43px;
+      position: absolute;
+      bottom: 0px; }
+    .servicios .relativo .izquierda {
+      left: 43px;
+      position: absolute;
+      bottom: 0px; }
+  @media screen and (max-width: 992px) {
+    .servicios .esconder {
+      display: none; } }
+
+.pricing {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  top: -80px; }
+  @media screen and (max-width: 992px) {
+    .pricing {
+      top: 0; } }
+  .pricing .imagen {
+    background-image: url("../images/pricing-bg.jpg");
+    height: 573px;
+    background-position-x: center; }
+    .pricing .imagen .espacio {
+      margin-bottom: 20px; }
+    .pricing .imagen .dot1 {
+      padding: 150px 0 75px 0; }
+      @media screen and (max-width: 992px) {
+        .pricing .imagen .dot1 {
+          padding-top: 80px; } }
+    .pricing .imagen h2 {
+      font-size: 36px;
+      font-weight: bold; }
+    .pricing .imagen p {
+      padding-top: 20px; }
+  .pricing .box {
+    margin-top: -180px; }
+    .pricing .box .col-md-3.text-center {
+      padding: 5px; }
+      .pricing .box .col-md-3.text-center .recuadro {
+        background: white;
+        box-shadow: 1px 1px 1px 1px #f5f5f5;
+        padding: 100px 0 50px 0;
+        border: 1px solid rgba(197, 201, 202, 0.5); }
+        .pricing .box .col-md-3.text-center .recuadro .margen {
+          margin-bottom: 30px; }
+          .pricing .box .col-md-3.text-center .recuadro .margen h5 {
+            text-transform: uppercase;
+            font-weight: bold; }
+        .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .pesos, .pricing .box .col-md-3.text-center .recuadro .alinear .pesos {
+          font-size: 14px;
+          position: absolute;
+          left: 90%;
+          top: 5px; }
+          @media screen and (max-width: 992px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .pesos, .pricing .box .col-md-3.text-center .recuadro .alinear .pesos {
+              left: 115%; } }
+          @media screen and (max-width: 762px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .pesos, .pricing .box .col-md-3.text-center .recuadro .alinear .pesos {
+              left: 130%; } }
+          @media screen and (max-width: 625px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .pesos, .pricing .box .col-md-3.text-center .recuadro .alinear .pesos {
+              left: 125%; } }
+          @media screen and (max-width: 463px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .pesos, .pricing .box .col-md-3.text-center .recuadro .alinear .pesos {
+              left: 110%; } }
+        .pricing .box .col-md-3.text-center .recuadro .col-xs-4 p, .pricing .box .col-md-3.text-center .recuadro .alinear p {
+          font-size: 48px;
+          font-weight: bold; }
+        .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .decimal, .pricing .box .col-md-3.text-center .recuadro .alinear .decimal {
+          font-size: 14px;
+          position: absolute;
+          right: 90%;
+          top: 5px; }
+          @media screen and (max-width: 992px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .decimal, .pricing .box .col-md-3.text-center .recuadro .alinear .decimal {
+              right: 110%; } }
+          @media screen and (max-width: 762px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .decimal, .pricing .box .col-md-3.text-center .recuadro .alinear .decimal {
+              right: 125%; } }
+          @media screen and (max-width: 625px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .decimal, .pricing .box .col-md-3.text-center .recuadro .alinear .decimal {
+              right: 120%; } }
+          @media screen and (max-width: 463px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .decimal, .pricing .box .col-md-3.text-center .recuadro .alinear .decimal {
+              right: 110%; } }
+        .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .ultimo, .pricing .box .col-md-3.text-center .recuadro .alinear .ultimo {
+          right: 100%; }
+          @media screen and (max-width: 992px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .ultimo, .pricing .box .col-md-3.text-center .recuadro .alinear .ultimo {
+              right: 125%; } }
+          @media screen and (max-width: 762px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .ultimo, .pricing .box .col-md-3.text-center .recuadro .alinear .ultimo {
+              right: 160%; } }
+          @media screen and (max-width: 625px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .ultimo, .pricing .box .col-md-3.text-center .recuadro .alinear .ultimo {
+              right: 155%; } }
+          @media screen and (max-width: 463px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .ultimo, .pricing .box .col-md-3.text-center .recuadro .alinear .ultimo {
+              right: 125%; } }
+        .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .ultimo1, .pricing .box .col-md-3.text-center .recuadro .alinear .ultimo1 {
+          left: 100%; }
+          @media screen and (max-width: 992px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .ultimo1, .pricing .box .col-md-3.text-center .recuadro .alinear .ultimo1 {
+              left: 135%; } }
+          @media screen and (max-width: 762px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .ultimo1, .pricing .box .col-md-3.text-center .recuadro .alinear .ultimo1 {
+              left: 166%; } }
+          @media screen and (max-width: 625px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .ultimo1, .pricing .box .col-md-3.text-center .recuadro .alinear .ultimo1 {
+              left: 160%; } }
+          @media screen and (max-width: 463px) {
+            .pricing .box .col-md-3.text-center .recuadro .col-xs-4 .ultimo1, .pricing .box .col-md-3.text-center .recuadro .alinear .ultimo1 {
+              left: 140%; } }
+        .pricing .box .col-md-3.text-center .recuadro .btn-success {
+          background: #00aef3;
+          width: 80%;
+          font-family: "Open Sans", sans-serif;
+          text-transform: uppercase;
+          border: 0;
+          padding: 10px;
+          letter-spacing: 2px;
+          font-weight: bold;
+          font-size: 12px;
+          margin-top: 40px; }
+          .pricing .box .col-md-3.text-center .recuadro .btn-success:hover {
+            background-color: #2b2f31; }
+        .pricing .box .col-md-3.text-center .recuadro .antes:after {
+          position: relative;
+          display: inline-block;
+          content: "";
+          height: 1px;
+          width: 150px;
+          background: #f0f2f1;
+          margin: 30px 0; }
+    .pricing .box .tabla {
+      box-sizing: border-box;
+      margin-right: 5px;
+      padding: 5px 0px 5px 25px; }
+      .pricing .box .tabla .col-xs-9 .tex {
+        font-size: 14px; }
+      .pricing .box .tabla .col-xs-3 .numero {
+        font-size: 14px; }
+      .pricing .box .tabla .color1 {
+        color: #12d3fe; }
+      .pricing .box .tabla .color2 {
+        color: #ffe9b1; }
+      .pricing .box .tabla .color3 {
+        color: #ffb494; }
+      .pricing .box .tabla .color4 {
+        color: #ffc3ae; }
+
+footer {
+  background: #142e3f;
+  font-family: "Open Sans", sans-serif; }
+  footer .claro {
+    padding: 120px 0; }
+    footer .claro h3 {
+      font-size: 30px;
+      color: #fefeff; }
+      @media screen and (max-width: 768px) {
+        footer .claro h3 {
+          font-size: 20px; } }
+      footer .claro h3 span {
+        color: #01acfa;
+        font-size: 36px; }
+        @media screen and (max-width: 768px) {
+          footer .claro h3 span {
+            font-size: 28px; } }
+  footer .oscuro {
+    background: #091722; }
+
+/*# sourceMappingURL=style.css.map */
